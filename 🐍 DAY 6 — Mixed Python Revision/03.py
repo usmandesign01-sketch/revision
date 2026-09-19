@@ -23,7 +23,7 @@ students = []
 for i in range(3):
     print(f"Enter details for student {i+1}:")
     name = input("Name: ")
-    age = int(input("Age: "))
+    age = float(input("Age: "))
     marks = float(input("Marks: "))
 
     student = {
