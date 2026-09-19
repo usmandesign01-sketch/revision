@@ -12,29 +12,36 @@ number = []
 for i in range(4):
     num = int(input(f"Enter number {i+1}: "))
     number.append(num)
+# print(num)
+
+postive_number = 0
+negative_number = 0
+zero_are = 0
+even_are = 0
+odd_are = 0
+
+for num in number:
+    if num > 0:
+        print(f"Positive number: {num}")
+        postive_number += 1
+
+    else:
+        print(f"Negative number: {num}")
+        negative_number += 1
+
+for num in number:
+    if num == 0:
+        zero_are = zero_are + 1
+        # print(f"Zero: {num}")
+
+    elif num % 2 == 0:
+        even_are = even_are + 1
+        # print(f"Even number: {num}")
+
+    else:
+        odd_are = odd_are + 1
+        # print(f"Odd number: {num}")
 print(num)
-
-postive_number = []
-negative_number = []
-zero_are = []
-even_are = []
-odd_are = []
-
-if number > 0:
-    postive_number = postive_number + 1 
-    print(number)
-else:
-    negative_number = negative_number + 1
-    print(number)
-if number == 0:
-    zero_are = zero_are + 1
-    print(number)
-if number % 2 == 0:
-    even_are = even_are + 1
-    print(number)
-else:
-    odd_are = odd_are + 1
-    print(number)
 
 
 
